@@ -11,12 +11,12 @@
   "icon": "icon.png",
   "repository": {
     "type": "git",
-    "url": "https://github.com/YOUR_USERNAME/diffcheckerplugin"
+    "url": "https://github.com/rishabkoul2001-commits/diffcheckerplugin"
   },
   "bugs": {
-    "url": "https://github.com/YOUR_USERNAME/diffcheckerplugin/issues"
+    "url": "https://github.com/rishabkoul2001-commits/diffcheckerplugin/issues"
   },
-  "homepage": "https://github.com/YOUR_USERNAME/diffcheckerplugin#readme",
+  "homepage": "https://github.com/rishabkoul2001-commits/diffcheckerplugin#readme",
   "keywords": [
     "diff",
     "compare",
