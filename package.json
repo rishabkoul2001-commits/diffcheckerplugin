@@ -1,0 +1,64 @@
+{
+  "name": "diffchecker-plugin",
+  "displayName": "Diff Checker",
+  "description": "Compare text files side-by-side with visual diff highlighting and character-level changes",
+  "version": "1.0.0",
+  "publisher": "RISHAB KOUL",
+  "author": {
+    "name": "RISHAB KOUL"
+  },
+  "license": "MIT",
+  "icon": "icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR_USERNAME/diffcheckerplugin"
+  },
+  "bugs": {
+    "url": "https://github.com/YOUR_USERNAME/diffcheckerplugin/issues"
+  },
+  "homepage": "https://github.com/YOUR_USERNAME/diffcheckerplugin#readme",
+  "keywords": [
+    "diff",
+    "compare",
+    "diff checker",
+    "text compare",
+    "file compare",
+    "side-by-side",
+    "comparison",
+    "merge"
+  ],
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "diffchecker.openDiffChecker",
+        "title": "Open Diff Checker"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts"
+  },
+  "devDependencies": {
+    "@types/node": "16.x",
+    "@types/vscode": "^1.74.0",
+    "@typescript-eslint/eslint-plugin": "^5.45.0",
+    "@typescript-eslint/parser": "^5.45.0",
+    "eslint": "^8.28.0",
+    "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "diff": "^5.1.0"
+  }
+}
