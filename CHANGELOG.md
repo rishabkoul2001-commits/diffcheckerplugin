@@ -2,6 +2,24 @@
 
 All notable changes to the "Diff Checker" extension will be documented in this file.
 
+## [1.0.3] - 2024-12-07
+
+### Fixed
+- 🐛 Fixed missing 'diff' module - now includes all dependencies in package
+- ✅ Extension now loads correctly with all required libraries
+
+## [1.0.2] - 2024-12-07
+
+### Fixed
+- 🐛 Fixed activation event - extension now properly activates on command invocation
+- ✅ Added proper onCommand activation event
+
+## [1.0.1] - 2024-12-07
+
+### Fixed
+- 🐛 Fixed command activation issue - extension now properly activates when command is invoked
+- ✅ Improved extension activation for better reliability
+
 ## [1.0.0] - 2024-12-07
 
 ### Initial Release

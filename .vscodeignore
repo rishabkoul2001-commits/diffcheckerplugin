@@ -8,10 +8,8 @@ vsc-extension-quickstart.md
 **/.eslintrc.json
 **/*.map
 **/*.ts
-node_modules/**
 .github/**
 .DS_Store
-*.vsix
 PUBLISHING.md
 QUICKSTART.md
 

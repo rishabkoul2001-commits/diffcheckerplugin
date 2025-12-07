@@ -2,7 +2,7 @@
   "name": "diffchecker-plugin",
   "displayName": "File Diff Checker",
   "description": "Compare text files side-by-side with visual diff highlighting and character-level changes",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "publisher": "Vscodepublisherjeejeb1717",
   "author": {
     "name": "rishabkoul"
@@ -33,7 +33,9 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onCommand:diffchecker.openDiffChecker"
+  ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
