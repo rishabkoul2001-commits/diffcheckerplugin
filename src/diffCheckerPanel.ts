@@ -1,5 +1,5 @@
 import * as vscode from 'vscode';
-import { diffLines, diffWords, Change } from 'diff';
+import { diffLines, diffWords, diffChars, Change } from 'diff';
 
 export class DiffCheckerPanel {
     public static currentPanel: DiffCheckerPanel | undefined;
@@ -174,16 +174,20 @@ export class DiffCheckerPanel {
     }
 
     private _getCharacterDiff(oldText: string, newText: string, isAdded: boolean): string {
-        const wordDiff = diffWords(oldText, newText);
+        // Use character-level diff for precise detection
+        const charDiff = diffChars(oldText, newText);
         let html = '';
         
-        wordDiff.forEach((part: Change) => {
+        charDiff.forEach((part: Change) => {
             const escaped = this._escapeHtml(part.value);
             if (part.added && isAdded) {
+                // Highlight added characters with underline
                 html += `<span class="char-added">${escaped}</span>`;
             } else if (part.removed && !isAdded) {
+                // Highlight removed characters with strikethrough
                 html += `<span class="char-removed">${escaped}</span>`;
             } else if (!part.added && !part.removed) {
+                // Unchanged text
                 html += escaped;
             }
         });
@@ -408,13 +412,17 @@ export class DiffCheckerPanel {
                 }
 
                 .char-added {
-                    background-color: rgba(133, 232, 157, 0.4);
-                    font-weight: 600;
+                    background-color: rgba(133, 232, 157, 0.6);
+                    font-weight: 700;
+                    border-radius: 3px;
+                    padding: 2px 3px;
                 }
 
                 .char-removed {
-                    background-color: rgba(249, 117, 131, 0.4);
-                    font-weight: 600;
+                    background-color: rgba(249, 117, 131, 0.6);
+                    font-weight: 700;
+                    border-radius: 3px;
+                    padding: 2px 3px;
                 }
             </style>
         </head>

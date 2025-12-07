@@ -8,5 +8,6 @@ declare module 'diff' {
 
     export function diffLines(oldStr: string, newStr: string): Change[];
     export function diffWords(oldStr: string, newStr: string): Change[];
+    export function diffChars(oldStr: string, newStr: string): Change[];
 }
 

@@ -2,6 +2,22 @@
 
 All notable changes to the "Diff Checker" extension will be documented in this file.
 
+## [1.1.1] - 2024-12-07
+
+### Improved
+- 🎨 **Cleaner visual design** - removed strikethrough and underline decorations
+- ✨ **Enhanced contrast** - brighter green and red highlights (60% opacity)
+- 📐 **Better spacing** - increased padding for improved readability
+- 💚 Clean, bold highlighting without text decorations
+
+## [1.1.0] - 2024-12-07
+
+### Enhanced
+- ✨ **Improved character-level diff detection** - now uses precise character-by-character comparison
+- 🎨 **Better visual highlighting** for character differences with increased contrast and boldness
+- 🔍 **More accurate diff** - detects even single character changes within words
+- 💡 Perfect for spotting typos, small edits, and subtle text changes
+
 ## [1.0.3] - 2024-12-07
 
 ### Fixed
