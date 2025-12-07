@@ -3,9 +3,9 @@
   "displayName": "Diff Checker",
   "description": "Compare text files side-by-side with visual diff highlighting and character-level changes",
   "version": "1.0.0",
-  "publisher": "RISHAB KOUL",
+  "publisher": "rishabkoul",
   "author": {
-    "name": "RISHAB KOUL"
+    "name": "rishabkoul"
   },
   "license": "MIT",
   "icon": "icon.png",
