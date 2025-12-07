@@ -1,9 +1,9 @@
 {
   "name": "diffchecker-plugin",
-  "displayName": "Diff Checker",
+  "displayName": "File Diff Checker",
   "description": "Compare text files side-by-side with visual diff highlighting and character-level changes",
   "version": "1.0.0",
-  "publisher": "rishabkoul",
+  "publisher": "Vscodepublisherjeejeb1717",
   "author": {
     "name": "rishabkoul"
   },
